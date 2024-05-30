@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>No Found</h1>
+    <h1>Not found</h1>
   </div>
 </template>
 

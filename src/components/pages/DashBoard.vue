@@ -10,7 +10,8 @@
       </thead>
       <tbody>
         <tr>
-          <td>{{ token }}</td>
+          
+          <td>{{token}}</td>
           <td>Random János</td>
           <td>Random@gmail.com</td>
         </tr>
@@ -24,7 +25,7 @@
 export default {
   data() {
     return {
-      token: "",
+      token: [],
     };
   },
   created() {
@@ -36,7 +37,9 @@ export default {
 
       const token = JSON.parse(localStorage.getItem("users"));
 
-      this.token = token.email;
+
+      this.token = token;
+      console.log(token);
 
       return token;
     },

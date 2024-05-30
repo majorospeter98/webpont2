@@ -38,14 +38,13 @@ export default {
   },
   methods: {
     formData() {
-     let formData={
-      token: 'assaasasasassa',
-      email: this.email,
-      password: this.password
-     }
+     
+      let token = 'SpjcYz8xQyY7w9Jz-DRU'
+      
+     
 let teszt=localStorage.getItem("users")
 let teszt2 =JSON.parse(teszt) ?? [] ;
-teszt2.push(formData)
+teszt2.push(token)
 console.log(teszt2);
       localStorage.setItem("users", JSON.stringify(teszt2));
 
